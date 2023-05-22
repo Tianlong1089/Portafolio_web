@@ -28,10 +28,18 @@ st.text(content_1)
 col3, col4 = st.columns(2)
 
 df = pd.read_csv("/home/tianlong55/Downloads/PyCharm_Projects/app2_portafolio/data.csv",sep=";")
+images_path = '/home/tianlong55/Downloads/PyCharm_Projects/app2_portafolio/images'
 
 with col3:
     for index, row in df[:10].iterrows():
         st.header(row['title'])
+        st.text(row['description'])
+        st.image(images_path+'/'+row['image'])
+        st.write('[Source Code](https://www.google.com)')
 with col4:
     for index, row in df[10:].iterrows():
         st.header(row['title'])
+        st.text(row['description'])
+        st.image(images_path+'/'+row['image'])
+        st.write('[Source Code](https://www.google.com)')
+
