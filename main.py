@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(layout='wide')
 
-st.header("Home")
+st.header("Tianlong1089")
 
 col1, col2 = st.columns(2)
 
@@ -18,3 +18,8 @@ with col2:
      continue my job career as a full time programmer. 
       """
     st.info(content)
+
+content_1="""
+        Below you can find some of the apps I have built in Python, C and other stuff. Feel free to contact me !!
+        """
+st.text(content_1)
